@@ -1,0 +1,17 @@
+h2{
+    text-align: center;
+    color: red;
+}
+li *{
+    text-decoration:none;
+    
+}
+.one li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 15px;
+    
+}
+.one li a{
+    color: black;
+}
