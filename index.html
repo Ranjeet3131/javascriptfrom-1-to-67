@@ -228,6 +228,129 @@
       <input type="button" value="decrement" onclick="decretimer()" >
       <input type="button" value="result" onclick="Stop()">
 
+      
+      <!-- assignment49-52 task1 -->
+      <form action="JavaScript:void(0)" method="POST" id="mainForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+        <label for="name">Father Name:</label>
+        <input type="text" id="fname"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+        <label for="phone">Phone:</label>
+        <input type="number" id="number"><br>
+        <label for="address">Address</label>
+        <input type="text" id="address"><br>
+        <button onclick="form()">Submit</button>
+    </form>  
+
+
+    <!-- assignment49-52 task2 -->
+    <p id="fulldescription">salayni Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness.
+
+      We are an organization that believes in lighting up the lives of underprivileged people across the world. We endeavor to provide the best quality services in areas including food, education, medical and social welfare free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day, hundreds more are given the hope of life through medical health care, many are educated to become leaders of tomorrow and several are given the opportunity to stand on their feet financially.
+      
+      Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125 branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide branches are operating under the guidance of a team of over 2,000 working professionals who help almost 125,000 people on a daily basis.
+      
+      We strongly believe that a little help goes a long way and our work would not be possible without the generous support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting our causes and enabling us to serve the needs of people in need.</p>
+     <p id="shortDescription">salayni Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness. <a href="JavaScript:void(0)" onclick="extra()">See More</a></p> 
+
+
+
+    <!-- assignment49-52 task3 -->
+     <div id="wrapper">
+      <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+      <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Class</th>
+      </tr>
+      
+      <tr id="row1">
+      <td id="name_row1">0</td>
+      <td id="country_row1">Ranjeet</td>
+      <td id="age_row1">12</td>
+      <td>
+      <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit('1')">
+      <input type="button" id="save_button1" value="Save" class="save" onclick="save('1')">
+      <input type="button" value="Delete" class="delete" onclick="deleterow('1')">
+      </td>
+      </tr>
+      
+      <tr id="row2">
+      <td id="name_row2">1</td>
+      <td id="country_row2">Akshay</td>
+      <td id="age_row2">8</td>
+      <td>
+      <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit('2')">
+      <input type="button" id="save_button2" value="Save" class="save" onclick="save('2')">
+      <input type="button" value="Delete" class="delete" onclick="deleterow('2')">
+      </td>
+      </tr>
+      
+      <tr id="row3">
+      <td id="name_row3">2</td>
+      <td id="country_row3">Abid</td>
+      <td id="age_row3">12</td>
+      <td>
+      <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit('3')">
+      <input type="button" id="save_button3" value="Save" class="save" onclick="save('3')">
+      <input type="button" value="Delete" class="delete" onclick="deleterow('3')">
+      </td>
+      </tr>
+      
+      </table>
+      </div>
+
+
+      <!-- assignment53-58 task1 -->
+     <div >
+      <img  id="img" onclick="sModal('img','./images/galaxys8.jpg')" src="./images/galaxys8.jpg'" alt="1" width="500px" height="500px">
+      <img  id="img" onclick="sModal('img','./images/iphone11promax.jpg')" src="./images/iphone11promax.jpg" alt="2" width="500px" height="500px">
+      <img  id="img" onclick="sModal('img','./images/Nokia32.jpg')" src="./images/Nokia32.jpg" alt="3" width="500px" height="500px">
+      <img  id="img" onclick="sModal('img','./images/OppoA3.jpg')" src="./images/OppoA3.jpg" alt="4" width="500px" height="500px">
+  </div>        
+  <div id="ok" class="hidden">
+      <div id="imgDiv">
+          <img src="./images/galaxys8.jpg" id="modalImg" alt="" width="100%" height="800px">
+          <button id="close" onclick="cModal()">Close</button>
+      </div>
+  </div>
+
+
+<!-- assignment53-58 task2 -->
+  <p id="peragraph" style="font-size: 12px;">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness.
+
+    We are an organization that believes in lighting up the lives of underprivileged people across the world. We endeavor to provide the best quality services in areas including food, education, medical and social welfare free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day, hundreds more are given the hope of life through medical health care, many are educated to become leaders of tomorrow and several are given the opportunity to stand on their feet financially.
+    
+    Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125 branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide branches are operating under the guidance of a team of over 2,000 working professionals who help almost 125,000 people on a daily basis.
+    
+    We strongly believe that a little help goes a long way and our work would not be possible without the generous support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting our causes and enabling us to serve the needs of people in need.</p>
+  <button onclick="zoomIn()">+</button>
+  <button onclick="zoomOut()">-</button>
+
+
+
+<!-- assignment58-67 task1 & task2 -->
+  <div> <h1> DOM </h1> 
+    <div id="form-content" class="content"> 
+      <label for="first-name">First Name</label> 
+      <input type="text" id="first-name"/>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name"/>
+      <label for="email">Email</label> 
+      <input type="text" id="email"/></div> 
+      <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+      </div></div>
+
+
+
+  
 
     <script src="./app.js"></script>
 </body>

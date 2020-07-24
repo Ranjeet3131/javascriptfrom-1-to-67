@@ -1943,3 +1943,199 @@ function Stop(){
 
 // end of assignment43-48
 
+
+
+// start of assignment49-52
+
+
+// assignment49-52 task1
+function form(){
+    var name = document.getElementById("name").value;
+    var fname = document.getElementById("fname").value;
+    var email = document.getElementById("email").value;
+    var number = document.getElementById("number").value;
+    var address = document.getElementById("address").value;
+    document.write("<h2>" + "Form Successfully Submitted" + "</h2>")
+    document.write("Name: " + name + "<br>")
+    document.write("Fathername: " + fname + "<br>")
+    document.write("Email: " + email + "<br>")
+    document.write("Number: " + number + "<br>")
+    document.write("Address: " + address + "<br>")
+}
+
+
+// assignment49-52 task2
+function extra(){
+    var description = document.getElementById("fulldescription").innerHTML;
+    document.getElementById("shortDescription").innerHTML = description
+}
+
+
+// assignment49-52 task3
+function edit(no)
+{
+ document.getElementById("edit_button"+no).style.display="none";
+ document.getElementById("save_button"+no).style.display="block";
+	
+ var name=document.getElementById("name_row"+no);
+ var country=document.getElementById("country_row"+no);
+ var age=document.getElementById("age_row"+no);
+	
+ var name_data=name.innerHTML;
+ var country_data=country.innerHTML;
+ var age_data=age.innerHTML;
+	
+ name.innerHTML="<input type='text' id='name_text"+no+"' value='"+name_data+"'>";
+ country.innerHTML="<input type='text' id='country_text"+no+"' value='"+country_data+"'>";
+ age.innerHTML="<input type='text' id='age_text"+no+"' value='"+age_data+"'>";
+}
+
+function save(no)
+{
+ var name_val=document.getElementById("name_text"+no).value;
+ var country_val=document.getElementById("country_text"+no).value;
+ var age_val=document.getElementById("age_text"+no).value;
+
+ document.getElementById("name_row"+no).innerHTML=name_val;
+ document.getElementById("country_row"+no).innerHTML=country_val;
+ document.getElementById("age_row"+no).innerHTML=age_val;
+
+ document.getElementById("edit_button"+no).style.display="block";
+ document.getElementById("save_button"+no).style.display="none";
+}
+
+function deleterow(no)
+{
+ document.getElementById("row"+no+"").outerHTML="";
+}
+
+
+// end of assignment49-52 
+
+
+
+
+
+
+
+
+
+// Start of assignment53-58 
+
+
+
+// assignment53-58  task1
+function cModal(){
+    document.getElementById("ok").className = "hidden"  
+}
+
+function sModal(id,src){
+    document.getElementById("ok").className = "visible"
+    var imageModal = document.getElementById("modalImg")
+    var image = document.getElementById(id);
+    imageModal.src = src;
+}
+
+
+
+// assignment53-58  task2
+function zoomIn(){
+    var font = document.getElementById("peragraph").style.fontSize
+    font = font.slice(0,length-2)
+    font = parseInt(font)
+    font += 10
+    font = font + "px"
+    document.getElementById("peragraph").style.fontSize = font
+}
+
+function zoomOut(){
+    var font = document.getElementById("peragraph").style.fontSize
+    font = font.slice(0,length-2)
+    font = parseInt(font)
+    font -= 10
+    font = font + "px"
+    document.getElementById("peragraph").style.fontSize = font
+}
+
+
+// end of assignment53-58
+
+
+
+
+
+
+
+
+// start of assignment58-67
+
+
+// assignment58-67 task1
+
+//i.
+
+var a = document.getElementById("main-content");
+console.log(a.nodeName)
+
+//ii.
+
+var a = document.getElementById("main-content");
+console.log(a.childNodes)
+
+//iii.
+
+var d = document.getElementsByClassName("render"); 
+ var p = d.childNodes; 
+console.log(p.innerHTML);
+
+//iv.
+var a = document.getElementById("first-name");
+var newTxt = document.createTextNode("Ranjeet");
+a.appendChild(newTxt);
+
+//v.
+
+var a = document.getElementById("last-name")
+var newTxt = document.createTextNode("Kumar");
+a.appendChild(newTxt);
+
+var a = document.getElementById("email")
+var newTxt = document.createTextNode("ranjeetandani75@gmail.com");
+a.appendChild(newTxt);
+
+
+
+// assignment58-67 task2
+
+// i.
+
+var a = document.getElementById("form-content");
+console.log(a.nodeType)
+
+// ii.
+var a = document.getElementById("last-name");
+console.log(a.nodeType)
+console.log(a.childNodes)
+
+// iii.
+var a = document.getElementById("last-name");
+var b = document.createElement("img")
+console.log(b)
+
+// iv.
+var a = document.getElementById("main-content");
+console.log(a.firstChild)
+console.log(a.lastChild)
+
+// v.
+var a = document.getElementById("last-name");
+console.log(a.nextSibling)
+console.log(a.previousSibling)
+
+// vi.
+var a = document.getElementById("email");
+console.log(a.nodeType)
+console.log(a.parentNode)
+
+
+// end of assignment58-67
